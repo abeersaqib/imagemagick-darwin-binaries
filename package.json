@@ -1,6 +1,6 @@
 {
   "name": "imagemagick-darwin-binaries",
-  "version": "7.0.7",
+  "version": "7.0.7.1",
   "description": "static library of imagemagic for darwin x64",
   "keywords": [
     "static",
