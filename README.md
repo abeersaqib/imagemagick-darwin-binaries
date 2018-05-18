@@ -1,4 +1,4 @@
-# imagemagick-darwin-static
+# imagemagick-darwin-binaries
 
 imagemagick static binaries for Mac OSX x64
 
@@ -10,16 +10,16 @@ you have to set the an environment variable to use it via spawn or cli.
 
 ``` bash
 // like you do in the bash:
-export MAGICK_HOME= "path/to/node_modules/imagemagick-darwin-static/bin/osx/imagemagick/7.0.5-5/"
-export DYLD_LIBRARY_PATH= "path/to/node_modules/imagemagick-darwin-static/bin/osx/imagemagick/7.0.5-5/lib/"
+export MAGICK_HOME= "path/to/node_modules/imagemagick-darwin-binaries/bin/osx/imagemagick/7.0.7/"
+export DYLD_LIBRARY_PATH= "path/to/node_modules/imagemagick-darwin-binaries/bin/osx/imagemagick/7.0.7/lib/"
 ```
 ``` javascript
 // with spawn, this can be done via the options parameter:
 // child_process.spawn(command[, args][, options])
 
-var convert_binary= "path/to/node_modules/imagemagick-darwin-static/bin/osx/imagemagick/7.0.5-5/bin/convert"
-var MAGICK_HOME= "path/to/node_modules/imagemagick-darwin-static/bin/osx/imagemagick/7.0.5-5/"
-var DYLD_LIBRARY_PATH= "path/to/node_modules/imagemagick-darwin-static/bin/osx/imagemagick/7.0.5-5/lib/"
+var convert_binary= "path/to/node_modules/imagemagick-darwin-binaries/bin/osx/imagemagick/7.0.7/bin/convert"
+var MAGICK_HOME= "path/to/node_modules/imagemagick-darwin-binaries/bin/osx/imagemagick/7.0.7/"
+var DYLD_LIBRARY_PATH= "path/to/node_modules/imagemagick-darwin-binaries/bin/osx/imagemagick/7.0.7/lib/"
 
 var spawn = require("child_process").spawn;
 
@@ -44,7 +44,7 @@ For more information about electron atom see [https://electron.atom.io/](https:/
 This module is installed via npm:
 
 ``` bash
-$ npm install imagemagick-darwin-static
+$ npm install imagemagick-darwin-binaries
 ```
 
 
@@ -54,7 +54,7 @@ $ npm install imagemagick-darwin-static
 Returns the path of a statically linked graphicsmagick on the local filesystem.
 
 ``` js
-var imagemagick = require('imagemagick-darwin-static');
+var imagemagick = require('imagemagick-darwin-binaries');
 console.log(imagemagick.path);
 
 ```
@@ -66,7 +66,7 @@ Best usage is with npm module gm
 ``` js
 var os = require("os");
 var graphicsmagick = require("graphicsmagick-static");
-var imagemagick = require("imagemagick-darwin-static");
+var imagemagick = require("imagemagick-darwin-binaries");
 var imageHandler = null;
 
 if (os.platform() == "win32") {
@@ -113,14 +113,14 @@ export default class AppPaths {
 // Usage:
 
 import AppPaths from 'WhatYouCalledTheFile';
-var imagemagickPath = require("imagemagick-darwin-static").path;
+var imagemagickPath = require("imagemagick-darwin-binaries").path;
 let fixedPath = AppPaths.replaceAsar(imagemagickPath);
 
 // Example for using ASAR:
 
 var os = require("os");
 var graphicsmagick = require("graphicsmagick-static");
-var imagemagick = require("imagemagick-darwin-static");
+var imagemagick = require("imagemagick-darwin-binaries");
 var imageHandler = null;
 
 if (os.platform() == "win32") {
