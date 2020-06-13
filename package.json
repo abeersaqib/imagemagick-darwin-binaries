@@ -23,10 +23,10 @@
   "author": "Freddie Meyer",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DungFu/imagemagick-darwin-binaries.git"
+    "url": "git+https://github.com/fireph/imagemagick-darwin-binaries.git"
   },
   "bugs": {
-    "url": "https://github.com/DungFu/imagemagick-darwin-binaries/issues"
+    "url": "https://github.com/fireph/imagemagick-darwin-binaries/issues"
   },
   "license": "MIT",
   "dependencies": {
