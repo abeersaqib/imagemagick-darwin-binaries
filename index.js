@@ -4,7 +4,7 @@ process.env['MAGICK_HOME'] = path.join(
   __dirname,
   'bin',
   'osx',
-  'imagemagick',
+  'ImageMagick-7.0.10',
   '7.0.7'
 );
 process.env['DYLD_LIBRARY_PATH'] = path.join(
@@ -12,7 +12,7 @@ process.env['DYLD_LIBRARY_PATH'] = path.join(
   'bin',
   'osx',
   'imagemagick',
-  '7.0.7',
+  'ImageMagick-7.0.10',
   'lib'
 );
 
@@ -33,7 +33,7 @@ var imagemagickPath = path.join(
   'bin',
   'osx',
   'imagemagick',
-  '7.0.7',
+  'ImageMagick-7.0.10',
   'bin'
 );
 
