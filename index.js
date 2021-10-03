@@ -4,8 +4,8 @@ process.env['MAGICK_HOME'] = path.join(
   __dirname,
   'bin',
   'osx',
+  'imagemagick',
   'ImageMagick-7.0.10',
-  '7.0.7'
 );
 process.env['DYLD_LIBRARY_PATH'] = path.join(
   __dirname,
